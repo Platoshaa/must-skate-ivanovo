@@ -1,0 +1,32 @@
+$trIn:all 1.6s cubic-bezier(.215,.61,.355,1),opacity  .6s cubic-bezier(.215,.61,.355,1);
+$trOut:all 1.6s cubic-bezier(.215,.61,.355,1);
+.toShow-unfold{
+    opacity: 0;
+    perspective: 600px;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+    transition: $trIn;
+    &.is-inview{
+      transform: none;
+  will-change: opacity;
+      opacity: 1;
+      transition: $trOut;
+
+      }
+  }
+.toShow-vertical{
+  
+    opacity: 0;
+    transform: translateY(100%) ;
+
+    transition: $trIn;
+    &.is-inview{
+      transform: none;
+  will-change: opacity;
+      opacity: 1;
+      transition: $trOut;
+
+      }
+  
+}
