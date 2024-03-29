@@ -163,7 +163,7 @@ if (isMobile.any() || document.body.clientWidth <= 768) {
     locoScroll.update()
   );
   ScrollTrigger.refresh();
-  window.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("load", function () {
     document.querySelector(".loader").classList.add("active");
   });
 }

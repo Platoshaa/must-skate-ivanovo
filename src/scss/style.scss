@@ -273,6 +273,13 @@ height: 100vh;
     width: 125%;
     height: 100%;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.4s;
+
+    &.is-inview{
+      transition: opacity 1.4s;
+      opacity: 1;
+    }
  
   }   &:after{
     position: absolute;
